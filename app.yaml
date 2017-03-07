@@ -1,15 +1,15 @@
 
-application: altoweb-160020 #602851408086
+application: altoweb-160020
 version: 1
 runtime: php
 api_version: 1
 threadsafe: true
 
- handlers:
- - url: /
-   static_files: www/index.html
-   upload: www/index.html
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
 
- - url: /(.*)
-   static_files: www/\1
-   upload: www/(.*)
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
