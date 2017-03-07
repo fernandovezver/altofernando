@@ -1,7 +1,7 @@
 
 application: altoweb-160020 #602851408086
 version: 1
-runtime: python27
+runtime: php
  api_version: 1
  threadsafe: true
 
