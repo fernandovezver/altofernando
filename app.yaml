@@ -1,6 +1,3 @@
-
-application: altoweb-160020
-version: 1
 runtime: php
 api_version: 1
 threadsafe: true
