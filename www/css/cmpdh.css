@@ -1,0 +1,27 @@
+.header.header-background .header-inner{
+  background: rgba(12, 12, 12, 0.54);
+  border-bottom: none;
+}
+.bkg-puerta{
+  background: #2B9CED;
+  height: 100rem;
+}
+.bkg-escuela{
+  background: #2B9CED;
+  height: 50rem;
+}
+.header-background .navigation > ul > li > a{
+  color:#002658;
+}
+.header-1 .navigation > ul > li > a, .header-1 .navigation-show a{
+  color:#011633;
+}
+.imagen{
+  filter:brightness(90%);
+}
+.difondo{
+  background-color: #efefef;
+}
+.dropdown-list.active{
+  width: 100%;
+}
