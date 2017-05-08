@@ -6,10 +6,10 @@
 	<title>Altomobile</title>
 	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
 
-	<!-- Font -->
+	<!-- Font
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-
+	-->
 	<!-- Css -->
 	<link rel="stylesheet" href="css/core.min.css" />
 	<link rel="stylesheet" href="css/skin.css" />
@@ -18,13 +18,16 @@
 	<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
 
 	<!-- Js -->
-
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 	<script src="js/timber.master.min.js"></script>
 	<script src="js/index.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+
+	<!--  Firebase conection -->
+    <script src="js/inicio.js"></script>
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -115,12 +118,12 @@
 			<div class="content clearfix reveal-side-navigation">
 
 				<!-- About Section -->
-				<div id="about">
+				<div id="about" class="altofondo" >
 					<<!-- Team Section 3 Custom -->
-					<div class="section-block altofondo replicable-content">
+					<div class="section-block altofondo1">
 						<div class="row">
 							<div class="column width-7">
-								<img src="http://placehold.it/500x500">
+								<iframe width="560" height="500" src="https://www.youtube.com/embed/_GuOjXYl5ew" frameborder="0" allowfullscreen></iframe>
 							</div>
 							<div class="column width-4">
 								<br>
@@ -142,51 +145,16 @@
 							<h4 class="weight-bold mb-30">Clients</h4>
 							<h6 class="occupation mb-20">Android /iOS /Web</h6>
 						</div>
-						<div class="row">
-							<div class="column width-6">
-								<div class="column width-6">
-									<img src="http://placehold.it/200x200">
-								</div>
-								<div class="column width-6">
-									<h1 class="mb-5">Microsoft</h1>
-									<h3>Description</h3>
-								</div>
-							</div>
-						<div class="column width-6">
-							<div class="column width-6">
-								<img src="http://placehold.it/200x200">
-							</div>
-							<div class="column width-4">
-									<h1 class="mb-5">Microsoft</h1>
-									<h3>Description</h3>
-								</div>
-							</div>
+						<div id="clientes" class="row">
+
+
+
+
 						</div>
 						<br>
 						<div class="row">
-							<div class="column width-6">
-								<div class="column width-6">
-									<img src="http://placehold.it/200x200">
-								</div>
-								<div class="column width-6">
-									<h1 class="mb-5">Microsoft</h1>
-									<h3>Description</h3>
-								</div>
-							</div>
-						<div class="column width-6">
-							<div class="column width-6">
-								<img src="http://placehold.it/200x200">
-							</div>
-							<div class="column width-4">
-									<h1 class="mb-5">Microsoft</h1>
-									<h3>Description</h3>
-								</div>
-							</div>
-						</div>
-						<br>
-						<div class="row">
-							<div class="column width-12">
-								<p style="text-align:center;color:black;">See more</p>
+							<div class="column width-12" style="text-align: center;">
+								<a type="a" name="a"style="text-align:center;color:black;" href="clients.html">See more</a>
 							</div>
 						</div>
 					</div>
@@ -202,37 +170,13 @@
 						<div class="row">
 							<h4 class="weight-bold mb-30">News</h4>
 						</div>
-						<div class="row">
-							<div class="column width-10">
-								<h3 class="mb-5" style="color: #2294E3;">Estamos de regreso</h3>
-								<h5>Nuevos proyectos en los que estamos trabajando</h5>
-							</div>
-							<div class="column width-2">
-								<h5>14/02/2017</h5>
-							</div>
-						</div>
-						<div class="row">
-							<div class="column width-10">
-								<h3 class="mb-5" style="color: #2294E3;">Estamos de regreso</h3>
-								<h5>Nuevos proyectos en los que estamos trabajando</h5>
-							</div>
-							<div class="column width-2">
-								<h5>14/02/2017</h5>
-							</div>
-						</div>
-						<div class="row">
-							<div class="column width-10">
-								<h3 class="mb-5" style="color: #2294E3;">Estamos de regreso</h3>
-								<h5>Nuevos proyectos en los que estamos trabajando</h5>
-							</div>
-							<div class="column width-2">
-								<h5>14/02/2017</h5>
-							</div>
+						<div id="noticias">
+
 						</div>
 						<br>
 						<div class="row">
-							<div class="column width-12">
-								<p style="text-align:center;color:black;">See more</p>
+							<div class="column width-12" style="text-align: center;">
+								<a type="a" name="a"style="text-align:center;color:black;" href="blog.html">See more</a>
 							</div>
 						</div>
 					</div>
@@ -248,58 +192,35 @@
 						<div class="row">
 							<h4 class="weight-bold mb-30">Experience / API's</h4>
 						</div>
-						<div class="row">
-							<div class="column width-6">
-								<div class="column width-4">
-									<img src="http://placehold.it/100x100">
-								</div>
-								<div class="column width-8">
-									<h3 class="mb-5" >Facebook</h3>
-									<h5>Bla bla bla</h5>
-									<p style="color:#4AC5DE;">See more</p>
-								</div>
-							</div>
-							<div class="column width-6">
-								<div class="column width-4">
-									<img src="http://placehold.it/100x100">
-								</div>
-								<div class="column width-8">
-									<h3 class="mb-5" >Google cloud</h3>
-									<h5>Bla bla bla</h5>
-									<p style="color:#4AC5DE;">See more</p>
-								</div>
-							</div>
+						<div class="row" id="tecnologias">
+
 						</div>
+
 						<br>
 						<div class="row">
-							<div class="column width-12">
-								<p style="text-align:center;color:black;">See more</p>
+							<div class="column width-12" style="text-align: center;">
+								<a type="a" name="a"style="text-align:center;color:black;" href="experiences.html">See more</a>
 							</div>
 						</div>
 						<br>
 						<div class="row" style="text-align:center;">
 							<div class="column width-4">
-								<img src="http://placehold.it/100x100">
+								<img src="images/concieve.png" width="100" height="100">
 								<br>
 								<h5>Conceive</h5>
 							</div>
 							<div class="column width-4">
-								<img src="http://placehold.it/100x100">
+								<img src="images/implement.png" width="100" height="100">
 								<br>
 								<h5>Implement</h5>
 							</div>
 							<div class="column width-4">
-								<img src="http://placehold.it/100x100">
+								<img src="images/evolve.png" width="100" height="100">
 								<br>
 								<h5>Evolve</h5>
 							</div>
 						</div>
 						<br>
-						<div class="row">
-							<div class="column width-12">
-								<p style="text-align:center;color:black;">See more</p>
-							</div>
-						</div>
 					</div>
 					<!-- Team Section 3 End -->
 				</div>
@@ -326,7 +247,9 @@
 													</div>
 													<h5 class="mb-5">Ryan M. Smith</h5>
 													<h6 class="occupation mb-20">Co - Funder</h6>
-													<p>BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+													<p>Ryan is known by many as the friendly guy who won’t hesitate to help with a problem. He views every problem as a way to build knowledge and increase agency.</p>
+													<p>From playing with technology to exploring mountains; his drive to explore new areas and examine new problems helps him bring a collect perspective to challenges to challenges that leave others sweating bullets.</p>
+													<p>At AltoMobile he serves as US sales and marketing operations manager.</p>
 												</div>
 											</div>
 										</li>
@@ -338,7 +261,9 @@
 													</div>
 													<h5 class="mb-5">Maxence Duthoo</h5>
 													<h6 class="occupation mb-20">Co - Funder</h6>
-													<p>BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+													<p>Max lives by the mantra “work hard play hard. He brings a dedication and unrelenting work ethic to his professional and personal pursuits that few can match.</p>
+													<p>Passionate about the mobile revolution, Max fought hard to earn a place in the competitive gaming industry by orchestrating projects that reached over 5 million downloads and top accolades in both Google Play and the App Store.</p>
+													<p>At AltoMobile he oversees the connection between the US and Mexico.</p>
 												</div>
 											</div>
 										</li>
@@ -350,7 +275,8 @@
 													</div>
 													<h5 class="mb-5">Flavio R. Reyes</h5>
 													<h6 class="occupation mb-20">Lead Developer</h6>
-													<p>BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+													<p>Flavio began his career in Mexico’s ascendant software industry. Initially hired for his superior technical talent; Flavio went on to demonstrate the rare mix personality and interpersonal skill necessary to manage large teams of developers as they shipped award winning products on both Android and iOS.</p>
+													<p>At AltoMobile he leads and mentors our production team to ensure the technical quality of our projects.</p>
 												</div>
 											</div>
 										</li>
@@ -369,14 +295,25 @@
 				<section id="contact">
 
 					<!-- Content Section -->
-					<div class="section-block replicable-content bkg-escuela color-white">
-						<div class="row">
-							<div class="column width-10 left">
-								<h2 class="weight-bold mb-30">Contact</h2>
-								<p class="lead">MAPA</p>
-							</div>
-						</div>
-					</div>
+					<div id="map" style="width:100%;height:400px;"></div>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd2je4v6ORlpi7c6Bj-1j-R6FtxhncrWc&callback=myMap"></script>
+					<script>
+					var myLatlng = new google.maps.LatLng(47.0378372,-122.888273);
+					var mapOptions = {
+					  zoom: 15,
+					  center: myLatlng
+					}
+					var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+					var marker = new google.maps.Marker({
+					    position: myLatlng,
+					    title:"Hello World!"
+					});
+
+					// To add the marker to the map, call setMap();
+					marker.setMap(map);
+
+					</script>
 					<!-- Content Section End -->
 
 					<!--Contact Form -->
@@ -387,7 +324,7 @@
 							<div class="column width-7">
 								<h4 class="weight-bold">Contact</h4>
 								<div class="contact-form-container">
-									<form class="contact-form" action="php/send-email.php" method="post" novalidate>
+									<form class="contact-form" action="mailto:your@email.com" method="post" novalidate>
 										<div class="row">
 											<div class="column width-6">
 												<div class="field-wrapper">
@@ -397,19 +334,19 @@
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="text" id="lname" name="lname" class="form-lname form-element large" placeholder="Email" tabindex="2" required="">
+													<input type="email" id="email" name="email" class="form-lname form-element large" placeholder="Email" tabindex="2" required="">
 													<span class="border"></span>
 												</div>
 											</div>
 											<div class="column width-12">
 												<div class="field-wrapper">
-													<input type="email" id="email" name="email" class="form-email form-element large" placeholder="Company" tabindex="3" required>
+													<input type="text" id="company" name="company" class="form-email form-element large" placeholder="Company" tabindex="3" required>
 													<span class="border"></span>
 												</div>
 											</div>
 											<div class="column width-12">
 												<div class="field-wrapper">
-													<input type="email" id="email" name="email" class="form-email form-element large" placeholder="Subject" tabindex="3" required>
+													<input type="text" id="subject" name="subject" class="form-email form-element large" placeholder="Subject" tabindex="3" required>
 													<span class="border"></span>
 												</div>
 											</div>
@@ -423,7 +360,7 @@
 													<textarea id="message" name="message" class="form-message form-element medium" placeholder="Message" tabindex="5" required></textarea>
 													<span class="border"></span>
 												</div>
-												<button type="submit" value="Aplicar" class="form-submit button mb-mobil-80 rounded border-grey-light border-hover-charcoal color-grey-light color-hover-charcoal" onclick="myFunction()">Apply</button>
+												<input type="submit" value="Aplicar" class="form-submit button mb-mobil-80 rounded border-grey-light border-hover-charcoal color-grey-light color-hover-charcoal" onclick="myFunction()">Apply</input>
 											</div>
 										</div>
 									</form>
