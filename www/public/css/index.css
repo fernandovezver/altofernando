@@ -1,0 +1,65 @@
+img{
+  max-width: 200%;
+}
+.header .logo img{
+  width: 150%;
+}
+
+.contenedor{
+  background-color: #4AC5DE;
+}
+.altoheader{
+  background-color: rgba(12, 12, 12, 0.32);
+  height: 10%;
+}
+
+.form-element + .border{
+  background-color: #4AC5DE;
+}
+
+.form-element.required-field, textarea.required-field{
+  border-color: #EF4E5F;
+}
+
+.altofondo{
+  height: 100vh;
+  background:  url("img/altofondo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.altofondo1{
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body, .box.xlarge{
+  background-color: #4AC5DE;
+  color: #FFFFFF;
+}
+
+.no-padding{
+  text-align: center;
+}
+
+.team-slider p{
+  color: #505050;
+}
+
+.mb-5{
+  color:#EF4E5F;
+}
+
+.footer .footer-bottom{
+  background-color: #4AC5DE;
+}
+
+.divider, hr{
+  margin: 0 !important;
+  padding: 0;
+  width: 160vh;
+}
+
+#map iframe{
+    pointer-events: none;
+}
