@@ -8,6 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
+//Funcion que accede a firebase y consigue el snapshot de las API's
 function initApp() {
     firebase.database().ref('/tecnologias/').once('value').then(function(snapshot) {
     	var obj=[];
@@ -17,10 +18,11 @@ function initApp() {
 	  	printAPI(arr);
 	});
 }
-
+//Aqui se imprime el arreglo de arriba
 function printAPI(arr){
     var goingToPrint=" ";
     for(var i=0; i<arr.length; i++){
+        //Se pegan en el string lo que se va a usar en el html
     	goingToPrint=goingToPrint+'<div class="container">';
     	goingToPrint=goingToPrint+'<div class="row">';
     	goingToPrint=goingToPrint+'<div class="column width-3">';
@@ -36,7 +38,7 @@ function printAPI(arr){
     	goingToPrint=goingToPrint+'</div>';
     	goingToPrint=goingToPrint+'<br><hr class="divisor">';
     }
-    
+    //Se pone como es el html para tener una mejor idea
     /*
         <div class="container">
         <div class="row">
@@ -56,10 +58,10 @@ function printAPI(arr){
       <hr class="divisor">
     */
     
-    
+    //Se pone el inner html
   	document.getElementById('cliente').innerHTML=goingToPrint;
 }
-
+//Se inicia
 window.onload = function() {
     initApp();
 };

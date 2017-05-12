@@ -8,6 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
+//Funcion que ayuda a cargar las noticias, las guarda en arr
 function initApp() {
     firebase.database().ref('/news/').once('value').then(function(snapshot) {
     	var obj=[];
@@ -18,7 +19,7 @@ function initApp() {
 	  	printNoticias(arr);
 	});
 }
-
+//Funcion que imprime las noticias, modifica el inner html y se itera en el snapshot obtenido
 function printNoticias(arr){
     var goingToPrint=" ";
     for(var i=0; i<arr.length; i++){
@@ -46,6 +47,7 @@ function printNoticias(arr){
   	document.getElementById('noticias').innerHTML=goingToPrint;
 }
 
+//Se llama a esta funcion para iniciar todo
 window.onload = function() {
     initApp();
 };

@@ -19,7 +19,7 @@
   function initApp() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        firebase.database().ref('/clientes/').once('value').then(function(snapshot) {
+        firebase.database().ref('/tecnologias/').once('value').then(function(snapshot) {
         	var obj=[];
         	obj=snapshot.val();
 		  	var arr  = Object.keys(obj).map(function (key) { return obj[key]; });
@@ -36,8 +36,8 @@
   function printButtons(arr){
   	var goingToPrint="";
   	for(var i=0; i<arr.length; i++){
-  		var p="'client.html?id="+arr[i].id+"'";
-  		goingToPrint=goingToPrint+'<tr><td>'+arr[i].cliente+'</td><td>'+arr[i].proyecto+'</td><td>'+arr[i].fecha+'</td><td>'+arr[i].prioridad+'</td><td><i class="pe-7s-config" onclick="window.location=('+ p +');"></i></td></tr>';
+  		var p="'technologie.html?id="+arr[i].id+"'";
+  		goingToPrint=goingToPrint+'<tr><td>'+arr[i].tecnologia+'</td><td>'+arr[i].prioridad+'</td><td><i class="pe-7s-config" onclick="window.location=('+ p +');"></i></td></tr>';
   	}
   	/*
   	<tr>
@@ -47,7 +47,7 @@
 		<th>Prioridad</th>
 	</tr>
   	*/
-  	document.getElementById('clients').innerHTML=goingToPrint;
+  	document.getElementById('technologies').innerHTML=goingToPrint;
   }
 
   window.onload = function() {
