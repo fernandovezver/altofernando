@@ -7,38 +7,32 @@ var config = {
     messagingSenderId: "602851408086"
 };
 firebase.initializeApp(config);
-//Funcion que nos sirve para sacar de la db lo que sea que necesitemos
+
 function initApp() {
-	//Consigue a los clientes
     firebase.database().ref('/clientes/').once('value').then(function(snapshot) {
     	var obj=[];
     	obj=snapshot.val();
 	  	var arr  = Object.keys(obj).map(function (key) { return obj[key]; });
 	  	arr.sort(function(a, b){return a.prioridad - b.prioridad});
-	  	//Aqui imprimimos a los clientes para abajo usar el mismo arreglo
 	  	printClients(arr);
 	});
-	//Consigue a las noticias
 	firebase.database().ref('/news/').once('value').then(function(snapshot) {
     	var obj=[];
     	obj=snapshot.val();
 	  	var arr  = Object.keys(obj).map(function (key) { return obj[key]; });
 	  	arr.sort(function(a, b){return new Date(b.fecha) - new Date(a.fecha);});
 	  	console.log(arr);
-	  	//Se imprimen las noticias
 	  	printNoticias(arr);
 	});
-	//Consigue las tecnologias
 	firebase.database().ref('/tecnologias/').once('value').then(function(snapshot) {
     	var obj=[];
     	obj=snapshot.val();
 	  	var arr  = Object.keys(obj).map(function (key) { return obj[key]; });
 	  	arr.sort(function(a, b){return a.prioridad - b.prioridad});
-	  	//Se imprimen
 	  	printAPI(arr);
 	});
 }
-//Funcion que imprime a los clientes
+
 function printClients(arr){
     var goingToPrint="";
     if(arr.length==1){
@@ -56,7 +50,7 @@ function printClients(arr){
   	}
   	document.getElementById('clientes').innerHTML=goingToPrint;
 }
-//Funcion imprime hasta 3 noticias
+
 function printNoticias(arr){
     var goingToPrint="";
     for(var i=0; i<arr.length && i<3; i++){
@@ -65,7 +59,6 @@ function printNoticias(arr){
   	document.getElementById('noticias').innerHTML=goingToPrint;
 }
 
-//Funcion que imprime la api o las tecnologias
 function printAPI(arr){
     var goingToPrint="";
     if(arr.length==1){
