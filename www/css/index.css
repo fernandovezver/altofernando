@@ -63,3 +63,31 @@ body, .box.xlarge{
 #map iframe{
     pointer-events: none;
 }
+
+h1{
+  font-size:4.2rem;
+}
+
+h3{
+  font-size:2rem;
+  color: #2294E3;
+}
+
+.seemore{
+  color: #4AC5DE;
+  font-size:2rem;
+  text-align:center;
+}
+
+.divider1{
+  width: 80%;
+  margin-left: 10% !important;
+  
+}
+
+.notidesc,.notidate,.apidesc,.expdesc{
+  color: #505050;
+}
+.tms-slide img{
+  max-width: 70%;
+}

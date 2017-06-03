@@ -60,7 +60,7 @@ function printClients(arr){
 function printNoticias(arr){
     var goingToPrint="";
     for(var i=0; i<arr.length && i<3; i++){
-    	goingToPrint=goingToPrint+'<div class="row"><div class="column width-10"><h3 class="mb-5" style="color: #2294E3;">'+arr[i].titulo+'</h3><h5>'+arr[i].noticia+'</h5></div><div class="column width-2"><h5>'+arr[i].fecha+'</h5></div></div>';
+    	goingToPrint=goingToPrint+'<div class="row"><div class="column width-10"><h3 class="mb-5" style="color: #2294E3; font-size: 200%;">'+arr[i].titulo+'</h3><h5 class="notidesc">'+arr[i].noticia+'</h5></div><div class="column width-2"><h5 class="notidate">'+arr[i].fecha+'</h5></div><hr class="divisor"><br></div>';
     }
   	document.getElementById('noticias').innerHTML=goingToPrint;
 }
@@ -69,9 +69,9 @@ function printNoticias(arr){
 function printAPI(arr){
     var goingToPrint="";
     if(arr.length==1){
-  	  goingToPrint=goingToPrint+'<div class="column width-6"><div class="column width-4"><img src="'+arr[0].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[0].tecnologia+'</h3><h5>'+arr[0].descripcion+'</h5></div></div>';
+  	  goingToPrint=goingToPrint+'<div class="column width-6"><div class="column width-4"><img src="'+arr[0].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[0].tecnologia+'</h3><h5 class="apidesc">'+arr[0].descripcion+'</h5></div></div>';
   	}else if(arr.length>=2){
-  	  goingToPrint=goingToPrint+'<div class="column width-6"><div class="column width-4"><img src="'+arr[0].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[0].tecnologia+'</h3><h5>'+arr[0].descripcion+'</h5></div></div>'+'<div class="column width-6"><div class="column width-4"><img src="'+arr[1].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[1].tecnologia+'</h3><h5>'+arr[1].descripcion+'</h5></div></div>';
+  	  goingToPrint=goingToPrint+'<div class="column width-6"><div class="column width-4"><img src="'+arr[0].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[0].tecnologia+'</h3><h5 class="apidesc">'+arr[0].descripcion+'</h5></div></div>'+'<div class="column width-6"><div class="column width-4"><img src="'+arr[1].logo+'" width="100" height="100"></div><div class="column width-8"><h3 class="mb-5" >'+arr[1].tecnologia+'</h3><h5 class="apidesc">'+arr[1].descripcion+'</h5></div></div>';
   	}else{
   	  
   	}
